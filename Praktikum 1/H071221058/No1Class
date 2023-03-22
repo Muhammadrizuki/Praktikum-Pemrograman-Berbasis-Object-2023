@@ -1,0 +1,36 @@
+class UjianClass {
+
+    // Deklarasi Variabel
+    private String  mahasiswa, nim;
+    private int     nilai;
+
+    // Setter
+    void setMahasiswa (String setMahasiswa) {
+    this.mahasiswa = setMahasiswa ;
+    } 
+    void setNim (String setNim) {
+    this.nim = setNim;
+    }
+    void setNilai (int setNilai) {
+    nilai = setNilai;
+    }
+
+    // Getter
+    String getMahasiswa () {
+    return this.mahasiswa;
+    }
+    String getNim () {
+        return this.nim;
+    }
+    int getNilai () {
+    return this.nilai;
+    }
+
+    // Output yang akan Dipanggil Di UjianMain
+    void detailUjian() {
+        System.out.println("{ H A S I L  N I L A I  U J I A N  1 }");
+        System.out.println("1.Mahasiswa Atas Nama   : " + mahasiswa);
+        System.out.println("  Dengan NIM            : " + nim); 
+        System.out.println("  Mendapatkan Nilai     : " + nilai);
+    }
+}
