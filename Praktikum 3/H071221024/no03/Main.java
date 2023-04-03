@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        //test
         Store store = new Store("Sisfo Computer");
         User user1 = new User("Rasyad", 3000);
         Product product1 = new Product("HP Pavilion Gaming 15", "2k", 15, store);
