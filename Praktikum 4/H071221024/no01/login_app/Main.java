@@ -1,11 +1,8 @@
 package login_app;
 
-import java.net.SocketTimeoutException;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
-import javax.annotation.processing.SupportedOptions;
 
 import login_app.models.Profile;
 import login_app.models.User;
@@ -118,16 +115,21 @@ public class Main {
                         System.out.println("1. Logout");
                         System.out.println("2. Leave");
                         System.out.print("> ");
-                        int option = sc.nextInt();
-                        if (option == 1){
-                            loop2 = false;
-                            loop3 = false;
-                            runApp();
-                        } else if (option == 2){
-                            System.out.println("Sampai Jumpa!!!");
-                            System.exit(0);
+                        if (sc.hasNextInt()){
+                            int option = sc.nextInt();
+                            if (option == 1){
+                                loop2 = false;
+                                loop3 = false;
+                                runApp();
+                            } else if (option == 2){
+                                System.out.println("Sampai Jumpa!!!");
+                                System.exit(0);
+                            } else {
+                                System.out.println("Inputan yang anda masukkan salah! Mohon mencoba kembali!");
+                            }
                         } else {
                             System.out.println("Inputan yang anda masukkan salah! Mohon mencoba kembali!");
+                            sc.nextLine();
                         }
                     }
                 } else {
