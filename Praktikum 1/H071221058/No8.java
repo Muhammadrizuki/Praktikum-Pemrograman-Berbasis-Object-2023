@@ -6,8 +6,10 @@ import java.util.Scanner;
 public class No8 {
     public static void main(String[] args) {
 
+    try {
     Scanner sc = new Scanner(System.in);
 
+    // Inputan
     System.out.print("Masukkan satu Bilangan : ");
     int bilangan = sc.nextInt();
     
@@ -26,10 +28,14 @@ public class No8 {
         }
     }
 
-    if (!found) {
-        System.out.println("Bilangan " + bilangan + " Tidak Ditemukan Pada Array2D");
+    if (!found) { // if tidak ditemukan
+        System.out.println("Bilangan " + bilangan + " Tidak Ditemukan Pada Array2D"); // output
     }
-    sc.close();
+    sc.close(); }
+
+    catch (Exception e) {
+        System.out.println("Inputan Harus Berupa Angka");} // catch jika inputan bukan angka
+    
 }  
     
 }

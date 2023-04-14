@@ -10,18 +10,23 @@ public class No4 {
 
         // Deklarasi Variable
 
-        String kalimat;
+        String kalimat; 
+
+        // Inpu
 
         System.out.println("Masukkan Judul Film : ");
         kalimat = sc.nextLine();
 
+        // String Builder = modifikasi String
         StringBuilder kalimatbaru = new StringBuilder();
         
+        // For loop
         for (String kata : kalimat.split(" ")) {
         String katabaru = kata.substring(0,1).toUpperCase() + kata.substring(1).toLowerCase();
         kalimatbaru.append(katabaru).append(" ");
         }
 
+        // Output
         System.out.println(kalimatbaru);
         sc.close();
 
