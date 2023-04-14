@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class No5 {
     public static void main(String[] args) {
+
         //Input
         Scanner input = new Scanner(System.in);
         String a = input.next();
@@ -17,6 +18,7 @@ public class No5 {
 
         // Perkondisian Menentukan Bulan dengan Memakai Integer Bulan dan Output Bulan
         if    (month == 1) {
+
             System.out.print(" Januari"); 
         } else if (month == 2) {
             System.out.print(" Februari");

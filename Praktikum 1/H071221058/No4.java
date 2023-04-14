@@ -12,7 +12,7 @@ public class No4 {
 
         String kalimat; 
 
-        // Input
+        // Inpu
 
         System.out.println("Masukkan Judul Film : ");
         kalimat = sc.nextLine();

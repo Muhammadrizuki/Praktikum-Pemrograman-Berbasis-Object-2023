@@ -2,8 +2,6 @@ package Lab.Pertemuan1.Tugas;
 
 import java.util.Scanner;
 
-
-
 public class No7 {
     public static void main(String[] args) {
         // Array Animals/List
@@ -15,6 +13,7 @@ public class No7 {
         System.out.println(kebun);
         sc.close();
 }
+
     // Method baru beserta For loop
     public static int findIndex(String teks,String[]animals) {
         for (int i = 0; i < animals.length; i++)   {
@@ -25,7 +24,8 @@ public class No7 {
         return -1; // else
 }
                                                
-} 
+}
+
 
 
 

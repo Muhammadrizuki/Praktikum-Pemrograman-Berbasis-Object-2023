@@ -36,7 +36,6 @@ public class No8 {
     catch (Exception e) {
         System.out.println("Inputan Harus Berupa Angka");} // catch jika inputan bukan angka
     
-
 }  
     
 }
