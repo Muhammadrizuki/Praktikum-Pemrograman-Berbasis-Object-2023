@@ -1,91 +1,164 @@
 package TUGAS.Pertemuan5.Nomor1;
 
 public class BangunDatar {
-    double luas() {
-        return 0;
+    int sisiPersegi;
+    int panjangPersegiPanjang;
+    int lebarPersegiPanjang;
+    int jariJariLingkaran;
+    int alasSegitiga;
+    int tinggiSegitiga;
+    int sisi1Segitiga;
+    int sisi2Segitiga;
+    int sisiAtasTrapesium;
+    int tinggiTrapesium;
+    int sisiBawahTrapesium; 
+    int sisiKananTrapesium; 
+    int sisiKiriTrapesium;
+    
+    public int getSisiPersegi() {
+        return sisiPersegi;
     }
-    double keliling() {
-        return 0;
+    public void setSisiPersegi(int sisiPersegi) {
+        this.sisiPersegi = sisiPersegi;
     }
+    public int getPanjangPersegiPanjang() {
+        return panjangPersegiPanjang;
+    }
+    public void setPanjangPersegiPanjang(int panjangPersegiPanjang) {
+        this.panjangPersegiPanjang = panjangPersegiPanjang;
+    }
+    public int getLebarPersegiPanjang() {
+        return lebarPersegiPanjang;
+    }
+    public void setLebarPersegiPanjang(int lebarPersegiPanjang) {
+        this.lebarPersegiPanjang = lebarPersegiPanjang;
+    }
+    public int getJariJariLingkaran() {
+        return jariJariLingkaran;
+    }
+    public void setJariJariLingkaran(int jariJariLingkaran) {
+        this.jariJariLingkaran = jariJariLingkaran;
+    }
+    public int getAlasSegitiga() {
+        return alasSegitiga;
+    }
+    public void setAlasSegitiga(int alasSegitiga) {
+        this.alasSegitiga = alasSegitiga;
+    }
+    public int getTinggiSegitiga() {
+        return tinggiSegitiga;
+    }
+    public void setTinggiSegitiga(int tinggiSegitiga) {
+        this.tinggiSegitiga = tinggiSegitiga;
+    }
+    public int getSisi1Segitiga() {
+        return sisi1Segitiga;
+    }
+    public void setSisi1Segitiga(int sisi1Segitiga) {
+        this.sisi1Segitiga = sisi1Segitiga;
+    }
+    public int getSisi2Segitiga() {
+        return sisi2Segitiga;
+    }
+    public void setSisi2Segitiga(int sisi2Segitiga) {
+        this.sisi2Segitiga = sisi2Segitiga;
+    }
+    public int getSisiAtasTrapesium() {
+        return sisiAtasTrapesium;
+    }
+    public void setSisiAtasTrapesium(int sisiAtasTrapesium) {
+        this.sisiAtasTrapesium = sisiAtasTrapesium;
+    }
+    public int getTinggiTrapesium() {
+        return tinggiTrapesium;
+    }
+    public void setTinggiTrapesium(int tinggiTrapesium) {
+        this.tinggiTrapesium = tinggiTrapesium;
+    }
+    public int getSisiBawahTrapesium() {
+        return sisiBawahTrapesium;
+    }
+    public void setSisiBawahTrapesium(int sisiBawahTrapesium) {
+        this.sisiBawahTrapesium = sisiBawahTrapesium;
+    }
+    public int getSisiKananTrapesium() {
+        return sisiKananTrapesium;
+    }
+    public void setSisiKananTrapesium(int sisiKananTrapesium) {
+        this.sisiKananTrapesium = sisiKananTrapesium;
+    }
+    public int getSisiKiriTrapesium() {
+        return sisiKiriTrapesium;
+    }
+    public void setSisiKiriTrapesium(int sisiKiriTrapesium) {
+        this.sisiKiriTrapesium = sisiKiriTrapesium;
+    } 
 }
 
 class Persegi extends BangunDatar {
-    int sisi;
     public Persegi(int sisi) {
-        this.sisi = sisi;
+        setSisiPersegi(sisi);
     }
     double luas() {
-        return Math.pow(sisi, 2);
+        return Math.pow(sisiPersegi, 2);
     }
     double keliling() {
-        return sisi*4;
+        return sisiPersegi*4;
     }
 }
 
 class persegiPanjang extends BangunDatar {
-    int panjang;
-    int lebar;
     public persegiPanjang(int panjang, int lebar) {
-        this.panjang = panjang;
-        this.lebar = lebar;
+        setPanjangPersegiPanjang(panjang);
+        setLebarPersegiPanjang(panjang);
     }
     double luas() {
-        return panjang*lebar;
+        return panjangPersegiPanjang*lebarPersegiPanjang;
     }
     double keliling() {
-        return (panjang*2)+(lebar*2);
+        return (panjangPersegiPanjang*2)+(lebarPersegiPanjang*2);
     }
 }
 
 class Lingkaran extends BangunDatar {
-    int jariJari;
     public Lingkaran(int jariJari) {
-        this.jariJari = jariJari;
+        setJariJariLingkaran(jariJari);
     }
     double luas() {
-        return Math.PI*Math.pow(jariJari, 2);
+        return Math.PI*Math.pow(jariJariLingkaran, 2);
     }
     double keliling() {
-        return Math.PI*2*jariJari;
+        return Math.PI*2*jariJariLingkaran;
     }
 }
 
 class Segitiga extends BangunDatar {
-    int alas;
-    int tinggi;
-    int sisi1;
-    int sisi2;
-    public Segitiga(int alas, int tinggi, int sisi1) {
-        this.alas = alas;
-        this.tinggi = tinggi;
-        this.sisi1 = sisi1;
-        // this.sisi2 = sisi2;
+    public Segitiga(int alas, int tinggi, int sisi1, int sisi2) {
+        setAlasSegitiga(alas);
+        setTinggiSegitiga(tinggi);
+        setSisi1Segitiga(sisi1);
+        setSisi2Segitiga(sisi2);
     }
     double luas() {
-        return 0.5*alas*tinggi;
+        return 0.5*alasSegitiga*tinggiSegitiga;
     }
     double keliling() {
-        return sisi1+tinggi+alas;
+        return sisi1Segitiga+tinggiSegitiga+alasSegitiga;
     }
 }
 
 class Trapesium extends BangunDatar {
-    int sisiAtas;
-    int tinggi;
-    int sisiBawah;
-    int sisiKanan;
-    int sisiKiri;
     public Trapesium(int sisiAtas, int sisiBawah, int sisiKanan, int sisiKiri, int tinggi) {
-        this.sisiAtas = sisiAtas;
-        this.sisiBawah = sisiBawah;
-        this.sisiKanan = sisiKanan;
-        this.sisiKiri = sisiKiri;
-        this.tinggi = tinggi;
+        setSisiAtasTrapesium(sisiAtas);
+        setSisiBawahTrapesium(sisiBawah);
+        setSisiKananTrapesium(sisiKanan);
+        setSisiKiriTrapesium(sisiKanan);
+        setTinggiTrapesium(tinggi);
     }
     double luas() {
-        return 0.5*sisiAtas*sisiBawah*tinggi;
+        return 0.5*sisiAtasTrapesium*sisiBawahTrapesium*tinggiTrapesium;
     }
     double keliling() {
-        return sisiAtas+sisiBawah+sisiKanan+sisiKiri;
+        return sisiAtasTrapesium+sisiBawahTrapesium+sisiKananTrapesium+sisiKiriTrapesium;
     }
 }
