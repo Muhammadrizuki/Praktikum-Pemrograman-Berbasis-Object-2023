@@ -1,21 +1,19 @@
 package TUGAS.Pertemuan5.Nomor1;
-
 import java.util.Scanner;
-
 public class Bangun {
     public static void main(String[] args) {
-        Scanner inp = new Scanner(System.in);
-        Bangun bangun = new Bangun();
+        Scanner scanner = new Scanner(System.in);
+        Bangun  tidur   = new Bangun();
 
-        Kubus kubus = new Kubus(5);
-        Balok balok = new Balok(5, 6, 7);
-        Bola bola = new Bola(14);
-        Tabung tabung = new Tabung(14, 24);
-        bangun.detailBangunRuang();
+        Kubus   kubus   = new Kubus(1);
+        Balok   balok   = new Balok(23, 10, 5);
+        Bola    bola    = new Bola(14);
+        Tabung  tabung  = new Tabung(14, 24);
+        tidur.detailBangunRuang();
         
         System.out.print("> ");
-        int pilihan2 = inp.nextInt();
-        inp.nextLine();
+        int pilihan2    = scanner.nextInt();
+        scanner.nextLine();
         switch (pilihan2) {
             case 1:
                 System.out.println("Luas Permukaan = " + kubus.luasPermukaan());
@@ -38,24 +36,24 @@ public class Bangun {
                 break;
         }
 
-        Persegi persegi = new Persegi(5);
-        persegiPanjang persegip = new persegiPanjang(5, 4);
-        Lingkaran lingkaran = new Lingkaran(14);
-        Segitiga segitiga = new Segitiga(12, 7, 10);
-        Trapesium trapesium = new Trapesium(4, 5, 3, 3, 2);
-        bangun.detailBangunDatar();
+        Persegi         persegi      = new Persegi(1);
+        persegiPanjang  persegii     = new persegiPanjang(2, 7);
+        Lingkaran       lingkaran    = new Lingkaran(20);
+        Segitiga        segitiga     = new Segitiga(12, 2, 2, 2);
+        Trapesium       trapesium    = new Trapesium(5, 2, 1, 6, 2);
+        tidur.detailBangunDatar();
 
         System.out.print("> ");
-        int pilihan3 = inp.nextInt();
-        inp.nextLine();
+        int pilihan3 = scanner.nextInt();
+        scanner.nextLine();
         switch (pilihan3) {
             case 1:
                 System.out.println("Luas        = " + persegi.luas());
                 System.out.println("Keliling    = " + persegi.keliling());
                 break;
             case 2:
-                System.out.println("Luas        = " + persegip.luas());
-                System.out.println("Keliling    = " + persegip.keliling());
+                System.out.println("Luas        = " + persegii.luas());
+                System.out.println("Keliling    = " + persegii.keliling());
                 break;
             case 3:
                 System.out.println("Luas        = " + lingkaran.luas());
@@ -73,7 +71,7 @@ public class Bangun {
                 System.out.println("INPUTAN TIDAK VALID");
                 break;
         }
-        inp.close();
+        scanner.close();
     }
     
     public void detailBangunRuang() {
