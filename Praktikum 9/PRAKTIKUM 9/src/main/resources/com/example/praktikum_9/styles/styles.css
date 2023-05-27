@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&display=swap');
+
+VBox{
+    -fx-background-color: black;
+}
+
+Text{
+    -fx-fill: white;
+    -fx-font-family: 'Roboto Mono', monospace;
+}
+
+Lable{
+    -fx-font-family: 'Roboto Mono', monospace;
+}
+
+Button{
+    -fx-font-family: 'Roboto Mono', monospace;
+}
+
+#appName{
+    -fx-font-size: 24px;
+    -fx-font-weight: 700;
+}
+
+#calc_opt_title{
+    -fx-font-weight: 500;
+    -fx-font-size: 24px
+}
+
+#calc_opt_1{
+    -fx-background-color: grey;
+    -fx-pref-height: 80px;
+    -fx-font-size: 18px;
+    -fx-pref-width: 190px;
+}
+
+#calc_opt_2{
+    -fx-background-color: grey;
+    -fx-pref-height: 80px;
+    -fx-font-size: 18px;
+    -fx-pref-width: 190px;
+}
+
+#calc_opt_title_box{
+    -fx-padding: 30px, 0, 0, 150px;
+    -fx-pref-height: 300px;
+    -fx-pref-width: 250px;
+}
+
+#calc_opt_button_box{
+    -fx-padding: 10px, 0, 0, 0;
+    -fx-pref-height: 300px;
+    -fx-pref-width: 250px;
+}
+
+/* scene 3 */
+
+#calc_title_box{
+    -fx-padding: 30px, 0, 30px, 0;
+    -fx-font-size: 20px;
+}
+
+#fil{
+    -fx-padding: 10px, 10px, 10px, 10px;
+    -fx-font-size: 15px;
+}
+
+#cat_list{
+    -fx-color: black;
+}
+
+#name{
+    -fx-background-color: white;
+}
+
+#price{
+    -fx-background-color: white;
+}
+
+#li{
+    -fx-font-size: 15px;
+    -fx-background-color: white;
+    -fx-fill: black;
+}
+
+#lj{
+    -fx-font-size: 15px;
+    -fx-background-color: white;
+    -fx-fill: black;
+}
+
+#add_prod_input{
+    -fx-padding: 20px, 20px, 20px, 20px;
+}
+
+#add_cat_box{
+    -fx-color: black;
+}
+
+
+
+#speed_title_box{
+    -fx-padding: 30px, 0, 30px, 0;
+    -fx-font-size: 20px;
+}
