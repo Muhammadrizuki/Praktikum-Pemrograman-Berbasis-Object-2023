@@ -1,0 +1,13 @@
+Text {
+    -fx-font-size: 24px;
+    -fx-fill: white;
+}
+
+.rootNode {
+    -fx-background-color: black;
+    -fx-padding: 50px;
+}
+
+.input {
+    -fx-text-fill: white;
+}
